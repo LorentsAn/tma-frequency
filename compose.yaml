@@ -1,0 +1,28 @@
+name: tma
+
+services:
+  server:
+    image: ${SERVER_IMAGE:-tma}:${TAG:-latest}
+    build: .
+    environment:
+      - VIRTUAL_HOST=${HOST:-localhost}
+      - VIRTUAL_PATH=/
+      - LETSENCRYPT_HOST=${LETSENCRYPT_HOST:-$HOST}
+    networks:
+      - default
+      - nginx-proxy
+    restart: always
+
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: tma
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_DB: tma
+    restart: always
+
+networks:
+  default:
+    name: tma-${TAG:-latest}
+  nginx-proxy:
+    external: true

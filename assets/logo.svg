@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" version="1.1" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="a" overflow="visible" markerHeight="0.40000001" markerWidth="0.40000001" orient="auto-start-reverse" preserveAspectRatio="xMidYMid" viewBox="0 0 1 1">
+      <path transform="scale(.7)" d="m-0.21115-4.1056 6.4223 3.2111a1 1 90 0 1 0 1.7889l-6.4223 3.2111a1.2361 1.2361 31.717 0 1-1.7889-1.1056v-6a1.2361 1.2361 148.28 0 1 1.7889-1.1056z" fill="context-stroke" fill-rule="evenodd"/>
+    </marker>
+  </defs>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m1.4049 1.3612v13.278h13.19" marker-end="url(#a)" marker-start="url(#a)" stroke="#000" stroke-width=".49417" style="paint-order:stroke markers fill"/>
+    <path d="m2.2608 4.0456s5.7064-1.8083 7.3791 0.18062c2.0557 2.4442 0.97665 7.5204 4.8882 7.573" stroke="#f00" stroke-width=".68315" style="paint-order:stroke markers fill"/>
+    <path d="m2.1803 7.1876c1.4198-0.48758 4.1061-0.41894 5.3821 0.4701 1.1862 0.82648 0.79874 2.4077 2.2226 3.9049 1.4239 1.4972 4.7274 0.98789 4.7274 0.98789" stroke="#0015ff" stroke-width=".68315" style="paint-order:stroke markers fill"/>
+  </g>
+</svg>

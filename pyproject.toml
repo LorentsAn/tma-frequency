@@ -1,0 +1,38 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "tma"
+version = "0.1.0"
+description = ""
+authors = ["Anna Lorenz <lorents202@mail.ru>"]
+readme = "README.md"
+packages = [{include = "tma", from = "src"}]
+
+[tool.poetry.dependencies]
+numpy = "^1.26.4"
+pandas = "^2.2.1"
+plotly = "^5.19.0"
+python = "^3.10"
+solara = "^1.32.1"
+scipy = "^1.12.0"
+cryptography = "^42.0.5"
+starlette = "^0.37.2"
+redis = "^5.0.3"
+psycopg = "^3.1.18"
+sqlalchemy = "^2.0.29"
+psycopg2-binary = "^2.9.9"
+pytest = "^8.1.1"
+pytest-mock = "^3.14.0"
+pydantic-settings = "^2.2.1"
+markdown = "^3.6"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.2.0"
+isort = "^5.13.2"
+ruff = "^0.2.2"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.0.2"
+pytest-cov = "^4.1.0"
